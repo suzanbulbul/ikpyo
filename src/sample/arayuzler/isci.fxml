@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contollers.IsciController">
+   <children>
+      <ImageView fx:id="fotograf" fitHeight="200.0" fitWidth="200.0" layoutX="810.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="30.0" layoutY="45.0" text="T.C. Kimlik No :" />
+      <Label layoutX="30.0" layoutY="90.0" text="Adı :" />
+      <Label layoutX="30.0" layoutY="135.0" text="Soyadı :" />
+      <Label layoutX="30.0" layoutY="225.0" text="Maaş :" />
+      <Label layoutX="30.0" layoutY="270.0" text="Departman :" />
+      <Label layoutX="30.0" layoutY="180.0" text="İşe Giriş Tarihi :" />
+      <TextField fx:id="tcKimlikNo" layoutX="122.0" layoutY="41.0" />
+      <TextField fx:id="soyadi" layoutX="122.0" layoutY="131.0" />
+      <DatePicker fx:id="iseGirisTarihi" layoutX="122.0" layoutY="176.0" />
+      <TextField fx:id="maas" layoutX="122.0" layoutY="221.0" />
+      <TextField fx:id="departman" layoutX="122.0" layoutY="266.0" />
+      <TextField fx:id="adi" layoutX="122.0" layoutY="86.0" />
+      <Label layoutX="320.0" layoutY="45.0" text="İşe Giriş Saatleri :" />
+      <Label layoutX="320.0" layoutY="191.0" text="İşten Çıkış Saatleri :" />
+      <ListView fx:id="istenCikisSaatleri" layoutX="320.0" layoutY="228.0" prefHeight="100.0" prefWidth="200.0" />
+      <ListView fx:id="iseGirisSaatleri" layoutX="320.0" layoutY="76.0" prefHeight="100.0" prefWidth="200.0" />
+      <Button fx:id="kisiyiGuncelle_yeniKisiEkle" layoutX="30.0" layoutY="314.0" mnemonicParsing="false" onAction="#personelBilgiGuncelleEkle" prefWidth="120.0" text="Yeni Personel Ekle" />
+      <Button fx:id="istenCikar" layoutX="199.0" layoutY="314.0" mnemonicParsing="false" onAction="#personelIstenCikar" text="İşten Çıkar" />
+      <ListView fx:id="personelListesi" layoutX="30.0" layoutY="384.0" onMouseClicked="#personelDetay" prefHeight="355.0" prefWidth="964.0" />
+      <Button fx:id="formuTemizle" layoutX="900.0" layoutY="353.0" mnemonicParsing="false" onAction="#formuTemizle" text="Formu Temizle" />
+      <Label layoutX="531.0" layoutY="79.0" text="Aylık Hedef :" />
+      <Label layoutX="530.0" layoutY="123.0" text="Toplam Uretim :" />
+      <TextField fx:id="aylikHedef" layoutX="631.0" layoutY="80.0" />
+      <TextField fx:id="toplamUretim" layoutX="631.0" layoutY="118.0" />
+      <Button fx:id="geri" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+      <TableView fx:id="personelTable" layoutX="30.0" layoutY="384.0" onMouseClicked="#personelDetay" prefHeight="355.0" prefWidth="964.0">
+         <columns>
+            <TableColumn fx:id="tableTC" prefWidth="175.0" text="TC Kimlik Numarası" />
+            <TableColumn fx:id="tableAdi" prefWidth="225.0" text="Adı" />
+            <TableColumn fx:id="tableSoyadi" prefWidth="225.0" text="Soyadı" />
+            <TableColumn fx:id="tableDepartmani" prefWidth="175.0" text="Departmanı" />
+            <TableColumn fx:id="tableIsegiris" prefWidth="162.0" text="İşe Giriş Tarihi" />
+         </columns>
+      </TableView>
+      <Button fx:id="fotoSec" layoutX="869.0" layoutY="302.0" mnemonicParsing="false" onAction="#fotografSec" text="Fotoğraf Seç" />
+      <Label fx:id="FotoName" layoutX="768.0" layoutY="331.0" prefHeight="17.0" prefWidth="226.0" />
+      <Label fx:id="hata" layoutX="28.0" layoutY="357.0" textFill="RED" />
+   </children>
+</AnchorPane>

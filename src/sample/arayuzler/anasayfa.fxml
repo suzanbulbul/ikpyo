@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contollers.Controller">
+   <children>
+      <Button layoutX="259.0" layoutY="322.0" mnemonicParsing="false" onAction="#girisCikis" prefWidth="100.0" text="Giriş Çıkış Takip" />
+      <Button layoutX="409.0" layoutY="322.0" mnemonicParsing="false" onAction="#personelListesi" prefWidth="100.0" text="Personel Listesi" />
+      <Button layoutX="546.0" layoutY="322.0" mnemonicParsing="false" onAction="#isciler" prefWidth="100.0" text="İşçiler" />
+      <Button layoutX="547.0" layoutY="372.0" mnemonicParsing="false" onAction="#pazarlamacilar" prefWidth="100.0" text="Pazarlamacılar" />
+      <Button layoutX="665.0" layoutY="322.0" mnemonicParsing="false" onAction="#itElemani" prefWidth="100.0" text="IT Elemanı" />
+      <Button layoutX="259.0" layoutY="372.0" mnemonicParsing="false" onAction="#muhasebeci" prefHeight="25.0" prefWidth="100.0" text="Muhasebeci" />
+      <Button layoutX="259.0" layoutY="422.0" mnemonicParsing="false" onAction="#muhendis" prefWidth="100.0" text="Muhendis" />
+      <Button layoutX="409.0" layoutY="422.0" mnemonicParsing="false" onAction="#satislar" prefWidth="100.0" text="Satışlar" />
+      <Button layoutX="409.0" layoutY="372.0" mnemonicParsing="false" onAction="#uretim" prefWidth="100.0" text="Üretim" />
+      <Button layoutX="666.0" layoutY="372.0" mnemonicParsing="false" onAction="#teknisyen" prefWidth="100.0" text="Teknisyen" />
+      <Button layoutX="547.0" layoutY="422.0" mnemonicParsing="false" onAction="#teknikEleman" prefWidth="100.0" text="Teknik Eleman" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contollers.SatislarController">
+   <children>
+      <TableView fx:id="personelTable" layoutX="30.0" layoutY="50.0" prefHeight="455.0" prefWidth="964.0">
+         <columns>
+            <TableColumn fx:id="tableTC" prefWidth="175.0" text="TC Kimlik Numarası" />
+            <TableColumn fx:id="tableAdi" prefWidth="225.0" text="Adı" />
+            <TableColumn fx:id="tableSoyadi" prefWidth="225.0" text="Soyadı" />
+            <TableColumn fx:id="tableToplamSatis" prefWidth="175.0" text="Toplam Satış" />
+            <TableColumn fx:id="tableAylikHedef" prefWidth="162.0" text="Aylık Hedef" />
+         </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="592.0" text="Toplam Yapılan Satış: " />
+      <Label fx:id="toplamSatis" layoutX="189.0" layoutY="592.0" text="30" />
+      <Label layoutX="440.0" layoutY="592.0" text="Aylık Satış Hedefi :" />
+      <Label fx:id="aylikHedef" layoutX="576.0" layoutY="592.0" text="50" />
+      <Button layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+   </children>
+</AnchorPane>

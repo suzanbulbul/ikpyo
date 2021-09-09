@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.contollers.GirisCikisTakipController">
+   <children>
+      <TableView fx:id="personelTable" layoutX="30.0" layoutY="50.0" onMouseClicked="#personelDetay" prefHeight="455.0" prefWidth="964.0">
+         <columns>
+            <TableColumn fx:id="tableTC" prefWidth="175.0" text="TC Kimlik Numarası" />
+            <TableColumn fx:id="tableAdi" prefWidth="225.0" text="Adı" />
+            <TableColumn fx:id="tableSoyadi" prefWidth="225.0" text="Soyadı" />
+            <TableColumn fx:id="tableDepartmani" prefWidth="175.0" text="Departmanı" />
+            <TableColumn fx:id="tableIsegiris" prefWidth="162.0" text="İşe Giriş Tarihi" />
+         </columns>
+      </TableView>
+      <Button layoutX="423.0" layoutY="571.0" mnemonicParsing="false" onAction="#personelGirdi" text="Personel Girdi" />
+      <Button layoutX="513.0" layoutY="571.0" mnemonicParsing="false" onAction="#personelCikti" text="Personel Çıktı" />
+      <Button fx:id="geri" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+      <Label fx:id="hata" layoutX="30.0" layoutY="513.0" textFill="RED" />
+   </children>
+</AnchorPane>
